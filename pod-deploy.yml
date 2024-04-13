@@ -1,16 +1,16 @@
 apiVersion: v1
 kind: Pod 
 metadata: 
-    name: my-pod-1
-    labels:
-        app: my-app
-        env: prod
-    namespace: production
+  name: my-pod-1
+  labels:
+    app: my-app
+    env: prod
+  namespace: production
 
 spec:
   containers:
-  - name : my-nginx
+  - name: my-nginx
     image: nginx
     ports:
-      - name: http
-        conatinerPort: 80
+    - name: http
+      containerPort: 80
